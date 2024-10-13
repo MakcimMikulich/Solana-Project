@@ -1,0 +1,97 @@
+.header {
+  background: #fff;
+}
+.header .header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  gap: 20px;
+}
+.header .header__container .header__logo {
+  display: flex;
+}
+.header .header__container .header__nav {
+  display: flex;
+  max-width: 243px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+@media (max-width: 768px) {
+  .header .header__container .header__nav {
+    max-width: 140px;
+  }
+}
+@media (max-width: 476px) {
+  .header .header__container .header__nav {
+    max-width: initial;
+    justify-content: center;
+  }
+}
+.header .header__container .header__nav .nav__link {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  position: relative;
+  transition: color, 0.3s;
+  font-weight: 500;
+  line-height: normal;
+}
+.header .header__container .header__nav .nav__link::after {
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0456fb;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.header .header__container .header__nav .nav__link:hover {
+  color: #0456fb;
+}
+.header .header__container .header__nav .nav__link:hover::after {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .header .header__container .header__nav .nav__link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 476px) {
+  .header .header__container .header__nav .nav__link {
+    font-size: 12px;
+  }
+}
+.header .header__container .header__button {
+  display: flex;
+  width: 144px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: #0456fb;
+  transition: background 0.2s;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .header .header__container .header__button {
+    width: initial;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 476px) {
+  .header .header__container .header__button {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+.header .header__container .header__button:hover {
+  background: #0804fb;
+}/*# sourceMappingURL=header.css.map */

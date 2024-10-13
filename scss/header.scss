@@ -1,0 +1,103 @@
+.header {
+    background: #fff;
+
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        gap: 20px;
+
+        .header__logo {
+            display: flex;
+
+            // @media (max-width: 768px) {
+            //     width: 88px;
+            //     height: 16px;
+            // }
+        }
+
+        .header__nav {
+            display: flex;
+            max-width: 243px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+
+            @media (max-width: 768px) {
+                max-width: 140px;
+            }
+
+            @media (max-width: 476px) {
+                max-width: initial;
+                justify-content: center;
+            }
+
+            .nav__link {
+                color: rgba(0, 0, 0, 0.7);
+                font-size: 20px;
+                font-family: "Inter", sans-serif;
+                text-align: center;
+                position: relative;
+                transition: color, 0.3s;
+                font-weight: 500;
+                line-height: normal;
+
+                &::after {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: #0456fb;
+                    content: "";
+                    transition: width 0.3s ease-out;
+                }
+                &:hover {
+                    color: #0456fb;
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
+                @media (max-width: 476px) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .header__button {
+            display: flex;
+            width: 144px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            border-radius: 100px;
+            background: #0456fb;
+            transition: background 0.2s;
+
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+
+            @media (max-width: 768px) {
+                width: initial;
+                padding: 12px;
+                font-size: 16px;
+            }
+            @media (max-width: 476px) {
+                padding: 5px;
+                font-size: 14px;
+            }
+
+            &:hover {
+                background: #0804fb;
+            }
+        }
+    }
+}

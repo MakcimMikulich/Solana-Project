@@ -1,0 +1,113 @@
+.blog {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .blog {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 476px) {
+  .blog {
+    margin-top: 32px;
+  }
+}
+.blog .blog__title {
+  display: flex;
+  flex-direction: column;
+}
+.blog .blog__title .title__note {
+  color: #0456fb;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: normal;
+}
+.blog .blog__title .title__main {
+  margin-top: 32px;
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (max-width: 1024px) {
+  .blog .blog__title .title__main {
+    font-size: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .blog .blog__title .title__main {
+    font-size: 28px;
+  }
+}
+@media (max-width: 476px) {
+  .blog .blog__title .title__main {
+    font-size: 18px;
+  }
+}
+.blog .blog__slider {
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .blog .blog__slider {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 476px) {
+  .blog .blog__slider {
+    margin-top: 32px;
+  }
+}
+.blog .blog__slider .swiper-slide {
+  display: flex;
+  padding: 18px 19px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  background: #fff;
+}
+.blog .blog__slider .swiper-slide .slide__img {
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+}
+.blog .blog__slider .swiper-slide .slide__img img {
+  width: 100%;
+}
+.blog .blog__slider .swiper-slide .slide__title {
+  margin-top: 10px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+}
+@media (max-width: 768px) {
+  .blog .blog__slider .swiper-slide .slide__title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 476px) {
+  .blog .blog__slider .swiper-slide .slide__title {
+    font-size: 16px;
+  }
+}
+.blog .blog__slider .swiper-slide .slide__description {
+  margin-top: 12px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 138.889%;
+}
+@media (max-width: 768px) {
+  .blog .blog__slider .swiper-slide .slide__description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 476px) {
+  .blog .blog__slider .swiper-slide .slide__description {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=blog.css.map */
